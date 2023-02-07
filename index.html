@@ -2,39 +2,118 @@
 <html> 
 
 <head>
-    <title>hw-03</title>
+    
     <link rel="stylesheet" href="style.css">
     <meta charset=utf-8/>
+
+    <!-- add the title -->
+    <title>hw-03</title>
 
 </head>
 
 
 <body>
+    <!-- add the header -->
     <h1 class='center'>hw-03: Interactive Webpage, and Marks & Channels</h1>
+
     <div>
-
         <div class='column'>
-            <div class='row'>
-                <!-- create the left column with vis1 -->
-                <div class='left'>
 
+            <div class='row'>
+
+                <!-- create the left column with text for vis1 -->
+                <div class='left'>
                     <img src="img/vis1.png" alt="What 2016 would look like if just women voted">
                 </div>
 
+                <!-- create the right column with text -->
                 <div class='right'>
-                    <p>sdicv2hbscidh</p>
-                    <p>sdicvhb2scidh</p>
+
+                    <!-- determine the mark -->
+                    <h2>Marks</h2>
+                    <ul>
+                        <li>Area (states in the United States)</li>
+                    </ul>
+
+                    <!-- determine the channels -->
+                    <h2>Channels</h2>
+                    <ul>
+                        <li>Color</li>
+                            <ul>
+                                <li>Use color hue to represent attribute of categorical type, red is for Trump, and blue is for Clinton</li>
+                                <li>It is a good mapping because colors are very differentiable, and viewer can tell from this visualization immediately which candidate would have been elected by women in each state</li>
+                            </ul>
+                        <li>Size &rarr; Area</li>
+                            <ul>
+                                <li>Represents attribute of categorical type, different area represent the state in U.S.</li>
+                                <li>This is a good mapping because it shows which states vote for Clinton/Trump and how larger the size corresponding to that color hue indicates that more people vote for that candidate.</li>
+                            </ul>
+                        <li>Position &rarr; Horizontal</li>
+                            <ul>
+                                <li>Electoral votes needed to win represents attribute of ordered for position on common scale</li>
+                                <li>This is a good mapping because it displays clearly on which candidate received the majority of votes and whether or not they won</li>
+                            </ul>
+                    </ul>
+
+                    <!-- determine the colormap(s)-->
+                    <h2>Colormap(s)</h2>
+                    <ul>
+                        <li>Categorical</li>
+                            <ul>
+                                <li>Represents attribte of categorical type (Clinton/Trump)</li>
+                                <li>This is a good mapping because the color choice are roughly the same saturation and value, but perceptually distant. Viewer can easily distinguish from visualization that woman prefer to vote for Clinton rather than Trump in 2016</li>
+                            </ul>
+
                 </div>
             </div>
 
             <div class='row'>
+
+                <!-- create the left column with vis2 -->
                 <div class='left'>
                     <img src="img/vis2.png" alt="The sweet spot">
                 </div>
 
+                <!-- create the right column with text for vis2 -->
                 <div class='right'>
-                    <p>sdicv2hbscidhsddh</p>
-                    <p>sdichsuicvhb2scidh</p>
+                    <!-- determine the mark -->
+                    <h2>Marks</h2>
+                    <ul>
+                        <li>Points (points on the graph represent each batted ball)</li>
+                        <li>Lines (there are horizontal lines in the graph that represent classification of the hit)</li>
+                    </ul>
+
+                    <!-- determine the channels -->
+                    <h2>Channels</h2>
+                    <ul>
+                        <li>Color</li>
+                            <ul>
+                                <li>Based on the scale at the top-left of the visualization, using color saturation to represent attribute of qualitative type</li>
+                                <li>This is good mapping because it give more information to the viewers, and they can easily tell how good that hit is in terms of scoring value</li>
+                            </ul>
+                        <li>Position &rarr; both</li>
+                            <ul>
+                                <li>represents the exit velocity(x) and launch angle(y) of each batted ball</li>
+                                <li>This is a good mapping because viewers can determine what launch angle and exit velocity that player use and how it differs from the other points</li>
+                            </ul>
+                        <li>Position &rarr; Horizontal</li>
+                            <ul>
+                                <li>Use scoring value bar to represent attribute of ordered, quantitative for position on a common scale</li>
+                                <li>This is a good mapping, because you can see how the color change corresponding to different scoring value</li>
+                            </ul>
+                    </ul>
+
+                    <!-- determine the colormap(s)-->
+                    <h2>Colormap(s)</h2>
+                    <ul>
+                        <li>Divergent</li>
+                            <ul>
+                                <li>Represents attribute of ordered, quantitative</li>
+                                <li>divergent color map hue that use white as the midpoint color, purple indicates socring value below average, and orange indicates scoring value above average</li>
+                                <li>This is a good mapping because viewers can clearly see if scoring value is below, in the middle, or above the average</li>
+                            </ul>
+
+                    </ul>
                 </div>
             </div>
 
@@ -48,10 +127,6 @@
     <!-- urls as hyperlinks -->
         <ul>
             <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox">Flexbox</a ></li>
-            <li><a href="https://www.w3schools.com/html/html_links.asp">HTML links</a ></li>
-            <li><a href="https://www.w3schools.com/html/html_images.asp">HTML Image</a ></li>
-            <li><a href="https://www.w3schools.com/graphics/svg_intro.asp">SVG Tutorial</a ></li>
-            <li><a href="https://www.teachucomp.com/add-a-line-break-in-html-tutorial/">Add a line break</a ></li>
             <li><a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">Two Columns Layout</a ></li>
         </ul>
     </div>
