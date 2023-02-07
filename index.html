@@ -24,6 +24,9 @@
                 <!-- create the left column with text for vis1 -->
                 <div class='left'>
                     <img src="img/vis1.png" alt="What 2016 would look like if just women voted">
+                    <!-- add a line break for beauty -->
+                    <br></br>
+
                 </div>
 
                 <!-- create the right column with text -->
@@ -72,6 +75,8 @@
                 <!-- create the left column with vis2 -->
                 <div class='left'>
                     <img src="img/vis2.png" alt="The sweet spot">
+                    <!-- add a line break for beauty -->
+                    <br></br>
                 </div>
 
                 <!-- create the right column with text for vis2 -->
@@ -116,7 +121,45 @@
                     </ul>
                 </div>
             </div>
+            <div class='row'>
+                <!-- create the left column with text for vis1 -->
+                <div class='left'>
+                    <img src="img/vis3.png" alt="random" id="vis3">
+                </div>
+                <div class='right'>
+                    <!-- determine the mark -->
+                    <h2>Marks</h2>
+                    <ul>
+                        <li>Areas (the area of each pie represents percentage that the category takes place in those 100 movies) </li>
+                    </ul>
 
+                    <!-- determine the channels -->
+                    <h2>Channels</h2>
+                    <ul>
+                        <li>Color</li>
+                            <ul>
+                                <li>Represents categorical attributes: different categories/genres of movies in the dataset</li>
+                                <li>This is a poor choice, since there are too many colors showing up in the pie chart, so it's kind of hard to follow. Moreover, there's no clear connection between the color and usual movie vibes/contents of the category, so it might be better if there's more meaningful colors assigned for the genres. </li>
+                            </ul>
+                        <li>Size &rarr; Area </li>
+                            <ul>
+                                <li>Represents ordered, quantitative attributes: the percentage of categories spreading among the 100 movies</li>
+                                <li>This is a good mapping, as it's straightforward showing the distribution of different genres by reading the angle, arclength and area of every slice. </li>
+                            </ul>
+                    </ul>
+
+                    <!-- determine the colormap(s)-->
+                    <h2>Colormap(s)</h2>
+                    <ul>
+                        <li>Categorical</li>
+                            <ul>
+                                <li>Represents categorical attributes: different genres of movies in the dataset</li>
+                                <li>This is a good choice since the attribute (genre) consists of categorical data. Thus, we use different colors to represent different categories.
+                            </ul>
+                    </ul>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -126,8 +169,10 @@
     <div>
     <!-- urls as hyperlinks -->
         <ul>
-            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox">Flexbox</a ></li>
-            <li><a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">Two Columns Layout</a ></li>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox">Flexbox</a></li>
+            <li><a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">Two Columns Layout</a></li>
+            <li><a href="https://www.kaggle.com/datasets/themrityunjaypathak/imdb-top-100-movies">Data Source for the 3rd visualization</a></li>
+            <li><a href="https://www.tableau.com/data-insights/reference-library/visual-analytics/charts/pie-charts">Tableau Pie Chart Analytics</a></li>
         </ul>
     </div>
 
