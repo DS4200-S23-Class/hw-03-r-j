@@ -3,19 +3,32 @@ body {
 
 }
 
+/* Centered the header */
+.center{
+  text-align: center;
+}
+
 
 /* Use FlexBox to create two columns and customize */
 .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .left {
-  flex: 50%;
+  width: 50%;
 }
 
 
 .right {
-  flex: 50%;
+  width: 50%;
+
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
