@@ -49,11 +49,7 @@ button {
   padding: 20px;
 }
 
-/* Create class for functionality in javascript function (and avoid "display" in javascript) */
+/* Create class for functionality in javascript function */
 .hide{
   display: none;
-}
-
-.show{
-  display: block;
 }
