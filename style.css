@@ -1,6 +1,5 @@
 body {
 	font-family: Arial;
-
 }
 
 /* Centered the header */
@@ -8,32 +7,49 @@ body {
   text-align: center;
 }
 
-
 /* Use FlexBox to create two columns and customize */
-
 .column{
   display: flex;
   flex-direction: column;
 }
 
-.row {
+.row{
   display: flex;
   flex-direction: row;
 }
 
-
-.left {
+.left{
   width: 50%;
 }
 
-.right {
+.right{
   width: 50%;
 }
 
-
-img {
+img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 95%;
 }
+
+.all{
+  display : none;
+}
+
+.format{
+  text-align: center;
+}
+
+button {
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  border-color: royalblue;
+  border-radius: 10px;
+  border-style: double;
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
