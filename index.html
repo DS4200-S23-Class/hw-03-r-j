@@ -2,30 +2,35 @@
 <html> 
 
 <head>
-    
+
+    <!-- register style sheet -->
     <link rel="stylesheet" href="style.css">
+
     <meta charset=utf-8/>
 
-    <!-- add the title -->
+    <!-- add the title for the page -->
     <title>hw-03</title>
 
 </head>
 
 <body>
-    <!-- add the header -->
-    <div class='center'><h1>hw-03: Interactive Webpage, and Marks & Channels</h1>
-
-    <button type="button" onclick="ShowAndHide()">Click me to show the visualization and answer</button>
+    <div class='center'>
+        <!-- add the header -->
+        <h1>hw-03: Interactive Webpage, and Marks & Channels</h1>
+        <!-- add the button -->
+        <button type="button" onclick="ShowAndHide()">Click here for magic !</button>
 
     </div>
 
-    <div id='answer' class='all'>
+    <div id='answer' class='show'>
 
+        <!-- stack divs in column -->
         <div class='column'>
 
+            <!-- start a new row -->
             <div class='row'>
 
-                <!-- create the left column with text for vis1 -->
+                <!-- create the left column for vis1 -->
                 <div class='left'>
                     <img src="img/vis1.png" alt="What 2016 would look like if just women voted">
                     <!-- add a line break for beauty -->
@@ -45,35 +50,41 @@
                     <!-- determine the channels -->
                     <h2>Channels</h2>
                     <ul>
-                        <li>Color</li>
+                        <li>Color (hue)</li>
                             <ul>
-                                <li>Use color hue to represent attribute of categorical type, red is for Trump, and blue is for Clinton</li>
-                                <li>It is a good mapping because colors are very differentiable, and viewer can tell from this visualization immediately which candidate would have been elected by women in each state</li>
+                                <li>Represents categorical attribute: red - Trump, blue - Clinton</li>
+                                <li>This is a good mapping because colors are separable, being expressive and effective to deliver the information. The states are grouped by colors. Viewers can tell from this visualization immediately which candidate would have been elected by women in each state by refering to different colors (indicating different candidates).</li>
                             </ul>
                         <li>Size &rarr; Area</li>
                             <ul>
-                                <li>Represents attribute of categorical type, different area represent the state in U.S.</li>
-                                <li>This is a good mapping because it shows which states vote for Clinton/Trump and how larger the size corresponding to that color hue indicates that more people vote for that candidate.</li>
+                                <li>Represents categorical attribute: different area represent different states in the U.S.</li>
+                                <li>This is a good mapping because it shows which states vote for Clinton/Trump and show how large in area the states are.</li>
                             </ul>
-                        <li>Position &rarr; Horizontal</li>
+                        <li>Position &rarr; Both (spatial region)</li>
                             <ul>
-                                <li>Electoral votes needed to win represents attribute of ordered for position on common scale</li>
-                                <li>This is a good mapping because it displays clearly on which candidate received the majority of votes and whether or not they won</li>
+                                <li>Represents categorical attribute: states</li>
+                                <li>This is a good mapping because the visualization follows the accurate real locations of states in the US, displays clearly on in which states which candidate received the majority of votes</li>
+                            </ul>
+                        <li>Size &rarr; Length</li>
+                            <ul>
+                                <li>Represents ordered diverging attribute: number/proportion of votes received by each candidate</li>
+                                <li>This is a good mapping, since it's accurate and separable. There's a middle point indicating winning half of the votes will win, and there are numbers corresponding to number of votes won by candidates with accurate bar length.</li>
                             </ul>
                     </ul>
 
-                    <!-- determine the colormap(s)-->
+                    <!-- determine the colormap(s) -->
                     <h2>Colormap(s)</h2>
                     <ul>
                         <li>Categorical</li>
                             <ul>
-                                <li>Represents attribte of categorical type (Clinton/Trump)</li>
-                                <li>This is a good mapping because the color choice are roughly the same saturation and value, but perceptually distant. Viewer can easily distinguish from visualization that woman prefer to vote for Clinton rather than Trump in 2016</li>
+                                <li>Represents categorical attribute: candidates (blue/red for Clinton/Trump)</li>
+                                <li>This is a good mapping because the color choice are roughly the same saturation and value, and perceptually distant. With different colors -> different category, viewers can easily distinguish from visualization that woman prefer to vote for Clinton rather than Trump in 2016</li>
                             </ul>
-
+                    </ul>
                 </div>
             </div>
 
+            <!-- start a new row -->
             <div class='row'>
 
                 <!-- create the left column with vis2 -->
@@ -83,33 +94,28 @@
                     <br></br>
                 </div>
 
-                <!-- create the right column with text for vis2 -->
+                <!-- create the right column with text -->
                 <div class='right'>
 
                     <!-- determine the mark -->
                     <h2>Marks</h2>
                     <ul>
-                        <li>Points (points on the graph represent each batted ball)</li>
-                        <li>Lines (there are horizontal lines in the graph that represent classification of the hit)</li>
+                        <li>Points (points in the graph represent each batted ball)</li>
+                        <li>Lines (horizontal lines in the graph represent classification of the hit)</li>
                     </ul>
 
                     <!-- determine the channels -->
                     <h2>Channels</h2>
                     <ul>
-                        <li>Color</li>
+                        <li>Color (saturation)</li>
                             <ul>
-                                <li>Based on the scale at the top-left of the visualization, using color saturation to represent attribute of qualitative type</li>
-                                <li>This is good mapping because it give more information to the viewers, and they can easily tell how good that hit is in terms of scoring value</li>
+                                <li>Represents continuous quantitative attributes: the scale at the top-left of the visualization </li>
+                                <li>This is good mapping because with orange and purple, the balls are grouped. Viewers can easily tell how good that hit is in terms of scoring value</li>
                             </ul>
-                        <li>Position &rarr; both</li>
+                        <li>Position &rarr; both horizontal and vertical</li>
                             <ul>
-                                <li>represents the exit velocity(x) and launch angle(y) of each batted ball</li>
-                                <li>This is a good mapping because viewers can determine what launch angle and exit velocity that player use and how it differs from the other points</li>
-                            </ul>
-                        <li>Position &rarr; Horizontal</li>
-                            <ul>
-                                <li>Use scoring value bar to represent attribute of ordered, quantitative for position on a common scale</li>
-                                <li>This is a good mapping, because you can see how the color change corresponding to different scoring value</li>
+                                <li>Represents continuous quantitative attributes: the exit velocity (horizonal) and launch angle (vertical) of each batted ball</li>
+                                <li>This is a good mapping because viewers can know from the visualization that which launch angle and exit velocity player used and how it differs from the other points. With evenly scaled x and y axis, the information delivered is accurate. With horizontal dot lines indicating Ground Balls, Line Drives, Home Runs, Fly Balls, and Pop-ups, the points are grouped according to their vertical position.</li>
                             </ul>
                     </ul>
 
@@ -118,15 +124,16 @@
                     <ul>
                         <li>Divergent</li>
                             <ul>
-                                <li>Represents attribute of ordered, quantitative</li>
-                                <li>divergent color map hue that use white as the midpoint color, purple indicates socring value below average, and orange indicates scoring value above average</li>
-                                <li>This is a good mapping because viewers can clearly see if scoring value is below, in the middle, or above the average</li>
+                                <li>Represents ordered, quantitative attribute: scoring value </li>
+                                <li>This color map used white as the midpoint color; purple indicates that scoring values are below average, and orange indicates scoring values are above average. Orange and purple are used to indicate extremes of the range.</li>
+                                <li>We think this is overall a good mapping because viewers can clearly see if scoring value is below, in the middle, or above the average via colors with contracts. However, different from red - Trump and blue - Clinton, there's no connection between below average and purple, and above average and orange. Thus, we have a little doubt whether the two colors are a good choice for colormap here.</li>
                             </ul>
 
                     </ul>
                 </div>
             </div>
 
+            <!-- start a new row -->
             <div class='row'>
                 
                 <!-- create the left column with text for our own vis -->
@@ -140,7 +147,7 @@
                     <!-- determine the mark -->
                     <h2>Marks</h2>
                     <ul>
-                        <li>Areas (the area of each pie represents percentage that the category takes place in those 100 movies) </li>
+                        <li>Areas (the area of each slice in the pie chart represents percentage that the category takes place in those 100 movies) </li>
                     </ul>
 
                     <!-- determine the channels -->
@@ -149,12 +156,17 @@
                         <li>Color</li>
                             <ul>
                                 <li>Represents categorical attributes: different categories/genres of movies in the dataset</li>
-                                <li>This is a poor choice, since there are too many colors showing up in the pie chart, so it's kind of hard to follow. Moreover, there's no clear connection between the color and usual movie vibes/contents of the category, so it might be better if there's more meaningful colors assigned for the genres. </li>
+                                <li>This is a poor choice, since there are too many colors showing up in the pie chart, so it's kind of hard to follow. Those are issues with effectiveness - separability. Moreover, there's no clear connection between the color and usual movie vibes/contents of the category, so it might be better if there's more meaningful colors assigned for the genres. </li>
                             </ul>
                         <li>Size &rarr; Area </li>
                             <ul>
                                 <li>Represents ordered, quantitative attributes: the percentage of categories spreading among the 100 movies</li>
-                                <li>This is a good mapping, as it's straightforward showing the distribution of different genres by reading the angle, arclength and area of every slice. </li>
+                                <li>This is a good mapping, as it's straightforward showing the distribution of different genres by reading area of every slice with accuracy. </li>
+                            </ul>
+                        <li>Tilt</li>
+                            <ul>
+                                <li>Represents ordered, quantitative attributes: the percentage of categories spreading among the 100 movies</li>
+                                <li>This is a good mapping, as it's accurately showing the distribution of different genres by reading angle of every slice. </li>
                             </ul>
                     </ul>
 
@@ -164,7 +176,7 @@
                         <li>Categorical</li>
                             <ul>
                                 <li>Represents categorical attributes: different genres of movies in the dataset</li>
-                                <li>This is a good choice since the attribute (genre) consists of categorical data. Thus, we use different colors to represent different categories.
+                                <li>This is a not bad choice since the attribute (genre) consists of categorical data. Thus, we use different colors to represent different categories. However, there are too many categories, therefore too many colors, shown in the chart, which is kind of hard to recognize the categories.
                             </ul>
                     </ul>
                 </div>
@@ -174,20 +186,25 @@
 
     <!-- acknowledgement part -->
     <h2 class='center'>Acknowledgements</h2>
-            
+
     <div>
     <!-- urls as hyperlinks -->
         <ul>
             <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox">Flexbox</a></li>
             <li><a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">Two Columns Layout</a></li>
+            <li><a href="https://www.geeksforgeeks.org/how-to-align-image-vertically-in-a-division-that-spans-vertically-on-the-whole-webpage-using-css/">Stack to Column</a></li>
             <li><a href="https://www.kaggle.com/datasets/themrityunjaypathak/imdb-top-100-movies">Data Source for the 3rd visualization</a></li>
             <li><a href="https://www.tableau.com/data-insights/reference-library/visual-analytics/charts/pie-charts">Tableau Pie Chart Analytics</a></li>
             <li><a href="https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp">How to use Toggle</a></li>
             <li><a href="https://www.w3schools.com/css/css_border.asp">Border</a></li>
+            <li><a href="https://www.w3schools.com/js/js_loop_while.asp">Do while loop reference</a></li>
+            <li><a href="https://stackoverflow.com/questions/195951/how-can-i-change-an-elements-class-with-javascript">Change ClassName</a></li>
+            <li><a href="https://www.w3schools.com/cssref/pr_class_display.php">CSS display</a></li>
         </ul>
     </div>
 
-<script src="main.js"></script>
+    <!-- register the javascript -->
+    <script src="main.js"></script>
 
 </body>
 

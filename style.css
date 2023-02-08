@@ -7,7 +7,8 @@ body {
   text-align: center;
 }
 
-/* Use FlexBox to create two columns and customize */
+/* Use FlexBox to create two columns and make visualizations stacking vertically */
+
 .column{
   display: flex;
   flex-direction: column;
@@ -26,6 +27,8 @@ body {
   width: 50%;
 }
 
+
+/* Customerize the images */
 img{
   display: block;
   margin-left: auto;
@@ -33,14 +36,7 @@ img{
   width: 95%;
 }
 
-.all{
-  display : none;
-}
-
-.format{
-  text-align: center;
-}
-
+/* Customerize the button */
 button {
   font-family: Arial;
   font-weight: bold;
@@ -53,3 +49,11 @@ button {
   padding: 20px;
 }
 
+/* Create class for functionality in javascript function (and avoid "display" in javascript) */
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
