@@ -11,12 +11,14 @@
 
 </head>
 
-
 <body>
     <!-- add the header -->
     <h1 class='center'>hw-03: Interactive Webpage, and Marks & Channels</h1>
 
-    <div>
+    <button type="button" onclick="ShowAndHide()">Click Me to only show the ackonwledgement</button>
+
+    <div id='answer' class='all'>
+
         <div class='column'>
 
             <div class='row'>
@@ -81,6 +83,7 @@
 
                 <!-- create the right column with text for vis2 -->
                 <div class='right'>
+
                     <!-- determine the mark -->
                     <h2>Marks</h2>
                     <ul>
@@ -121,12 +124,17 @@
                     </ul>
                 </div>
             </div>
+
             <div class='row'>
-                <!-- create the left column with text for vis1 -->
+                
+                <!-- create the left column with text for our own vis -->
                 <div class='left'>
                     <img src="img/vis3.png" alt="random" id="vis3">
                 </div>
+
+                <!-- create the right column with text for our own vis -->
                 <div class='right'>
+
                     <!-- determine the mark -->
                     <h2>Marks</h2>
                     <ul>
@@ -158,7 +166,6 @@
                             </ul>
                     </ul>
                 </div>
-                </div>
             </div>
         </div>
     </div>
@@ -173,8 +180,12 @@
             <li><a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">Two Columns Layout</a></li>
             <li><a href="https://www.kaggle.com/datasets/themrityunjaypathak/imdb-top-100-movies">Data Source for the 3rd visualization</a></li>
             <li><a href="https://www.tableau.com/data-insights/reference-library/visual-analytics/charts/pie-charts">Tableau Pie Chart Analytics</a></li>
+            <li><a href="https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp">How to use Toggle</a></li>
+            <li><a href="https://www.w3schools.com/css/css_border.asp">Border</a></li>
         </ul>
     </div>
+
+<script src="main.js"></script>
 
 </body>
 
